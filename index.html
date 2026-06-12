@@ -3,44 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autopilot Content Engine</title>
+    <title>Autopilot Engine | Pinterest Growth Dashboard</title>
     <meta name="description" content="Automated visual content generation and scheduling for Pinterest creators.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
+    <div class="grid-background"></div>
+    <div class="ambient-light"></div>
 
-    <div class="container">
-        <header class="glass-panel">
-            <h1 class="gradient-text">Autopilot Content Engine</h1>
-            <p class="subtitle">An internal Pinterest automation tool designed to help creators generate high-quality visual content and schedule pins directly to their authorized boards.</p>
-        </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="ph-fill ph-infinity"></i>
+                <span>Autopilot<span class="text-muted">.engine</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">Workflow</a></li>
+                <li><a href="#privacy">Security</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary">Connect Account</a>
+        </div>
+    </nav>
 
-        <main class="glass-panel privacy-section">
-            <h2>Privacy Policy</h2>
-            <div class="policy-content">
-                <p><strong>Last Updated: June 2026</strong></p>
-                <p>Autopilot Content Engine only accesses data for the authenticated user's Pinterest account. We are committed to protecting your privacy and ensuring the security of your data.</p>
-                
-                <h3>Data Collection & Usage</h3>
-                <p>We do not store, sell, or share user data with third parties. Authentication tokens are kept securely and used solely for the purpose of publishing the user's own authorized content to their selected boards.</p>
-                
-                <h3>Pinterest API Compliance</h3>
-                <p>This application complies with Pinterest's Developer Guidelines. It utilizes the official API to facilitate automated publishing without circumventing any platform limits or engaging in spam behavior.</p>
-                
-                <h3>Contact</h3>
-                <p>For questions regarding this privacy policy or data deletion requests, please contact the administrator.</p>
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Autopilot Engine v2.0 is live
             </div>
-        </main>
-        
-        <footer>
-            <p>&copy; 2026 Autopilot Content Engine. All rights reserved.</p>
-        </footer>
-    </div>
+            <h1 class="hero-title">Automate your Pinterest<br><span class="text-gradient">growth trajectory.</span></h1>
+            <p class="hero-subtitle">Programmatic visual generation, SEO-optimized descriptions, and algorithmic scheduling right from a command-center dashboard.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">Start Building</a>
+                <a href="#" class="btn btn-secondary">
+                    <i class="ph ph-terminal-window"></i> View Documentation
+                </a>
+            </div>
+            
+
+        </section>
+
+        <!-- Features Bento Grid -->
+        <section id="features" class="section">
+            <div class="section-header">
+                <h2>Engineered for scale.</h2>
+                <p>Everything you need to run a high-volume visual content operation.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="card card-large gradient-border">
+                    <div class="card-icon"><i class="ph ph-cpu"></i></div>
+                    <h3>Algorithmic Generation</h3>
+                    <p>Harness localized fine-tuned models to generate highly aesthetic imagery tailored perfectly to your specific niche architecture without ever touching a design tool.</p>
+                    <div class="code-snippet">
+                        <code><span class="token-keyword">await</span> engine.<span class="token-method">generate</span>({ niche: <span class="token-string">'minimalist-decor'</span>, count: <span class="token-number">50</span> });</code>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-text-aa"></i></div>
+                    <h3>Smart Typography</h3>
+                    <p>Programmatic overlay of scroll-stopping text optimized for CTR.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-clock"></i></div>
+                    <h3>CRON Scheduling</h3>
+                    <p>Drip-feed pins directly to your boards at algorithmically optimal times.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-shield-check"></i></div>
+                    <h3>Rate-Limit Evasion</h3>
+                    <p>Dynamic template rotation and intelligent delays keep accounts secure.</p>
+                </div>
+                <div class="card card-wide">
+                    <div class="card-icon"><i class="ph ph-magnifying-glass"></i></div>
+                    <h3>Automated SEO Optimization</h3>
+                    <p>Instantly generate keyword-dense titles, descriptions, and alt-text formatted perfectly for Pinterest's visual search engine indexing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy" class="section privacy-section">
+            <div class="card privacy-card">
+                <div class="privacy-content">
+                    <div class="card-icon"><i class="ph ph-lock-key"></i></div>
+                    <h2>Enterprise-grade Security</h2>
+                    <p>We believe in strict data isolation. The engine only accesses data for the authenticated user's Pinterest account via official OAuth integrations.</p>
+                    <ul class="security-list">
+                        <li><i class="ph ph-check-circle"></i> Zero data sharing or selling</li>
+                        <li><i class="ph ph-check-circle"></i> Encrypted token storage</li>
+                        <li><i class="ph ph-check-circle"></i> Pinterest API compliant</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <i class="ph-fill ph-infinity"></i> Autopilot
+            </div>
+            <div class="footer-links">
+                <a href="#">Documentation</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
